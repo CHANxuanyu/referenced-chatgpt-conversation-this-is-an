@@ -34,7 +34,7 @@
 → Current Knowledge
 ```
 
-本合同冻结二十八项产品决定：
+本合同冻结二十九项产品决定：
 
 1. **Add 是不同后果的动作入口，不是一个万能导入框。**
 2. **用户自己的直接写作经安全保存后就是 Current Knowledge。**
@@ -64,6 +64,7 @@
 26. **文件夹路径是 import provenance，不自动成为 nested Groups、Topics 或 Relations。**
 27. **大批量导入先保护每份原材料，逐对象隔离失败，再汇总少量高影响决定。**
 28. **Graph、Search、Ask、export、mobile、keyboard 与 screen reader 只能读取实际已提交的 truth，不读取未采纳 Proposal。**
+29. **未使用的 Source 不构成积压；“未使用”只是可选 filter，不是状态、数量或清空目标。**
 
 ---
 
@@ -302,6 +303,18 @@ Attachment 只回答“这份材料为什么被放到这个语境”。它不意
 - 可以被显式选择进入 Ask；
 - 可以以后标注、形成知识或添加 Evidence；
 - 不显示整理进度、红点或“待消化”欠债。
+
+## 5.6 未使用不是积压
+
+Source 的唯一义务是可返回、可核验、可导出，不要求被使用才配存在。
+
+- “未使用”由 Used by 为空推导，是观察条件，不是 Source 的生命周期状态；12.1 的 Source states 保持封闭；
+- Source utility、Library 与任何导航表面不显示未使用数量、整理进度、红点或清空目标；
+- 按 Used by 为空过滤是用户的显式动作；结果不称为“待消化”，不成为默认分组，离开后不留标记或提醒；
+- AI 不因 Source 长期未使用而批量生成消化建议；9.1 的 Proposal 出现条件不因积压时长放宽；
+- S100 / S1000 的长期累积不改变以上纪律，与 11.3 规模不改变心智模型同理。
+
+保存即完成。用户对一份已保存的 Source 没有任何后续义务。
 
 ---
 
@@ -787,6 +800,10 @@ Fixture A 的官方规则 Source 新 Revision 改变。系统先显示 criterion
 
 Source 完整保存和解析，但用户只需要它作为参考，没有形成稳定新理解。系统显示`资料已保存，没有形成新的知识`；没有 47 个待确认卡片。
 
+## FX-13 · 多份 Source 长期未使用
+
+Fixture C 保存的 Source 多于被 Used by 引用的 Source。Source utility 穷尽列出全部，不显示未使用数量、不按使用状态默认分组、不提供清空动作；按 Used by 为空过滤是显式 filter，离开后不留标记。
+
 ---
 
 # 15. 专项验收合同
@@ -817,6 +834,7 @@ Source 完整保存和解析，但用户只需要它作为参考，没有形成�
 | FEC-22 | AC-30 | Export / Restore 保留 Source revisions、Bindings、Knowledge revisions、Attachments 与 import provenance |
 | FEC-23 | AC-31 | desktop / compact / mobile 保留 save receipt、basis、target、effect、partial state 与 return |
 | FEC-24 | AC-32 | keyboard / screen reader 可完成 Add → Source save → Fragment → Form → Commit → Back |
+| FEC-25 | AC-26 | 未使用 Source 不产生数量、红点、清空目标或消化建议；“未使用”仅为显式 filter，Source states 保持封闭 |
 
 ---
 
